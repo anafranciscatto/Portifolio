@@ -46,10 +46,6 @@ function desenharEstrelas() {
     requestAnimationFrame(desenharEstrelas);
 }
 
-function toggleMode() {
-    document.body.classList.toggle('dark-mode');
-}
-
 window.addEventListener('resize', redimensionarCanvas);
 
 criarEstrelas(300);
