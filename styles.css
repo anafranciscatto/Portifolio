@@ -1,0 +1,45 @@
+:root {
+    /* Variáveis para o modo claro */
+    --fundo-cor: #ffffff;
+    --cor-background: #f5f5f5;
+    --cor-texto: #000000;
+}
+
+body.dark-mode {
+    /* Variáveis para o modo escuro */
+    --fundo-cor: #000000;
+    --cor-background: #222222;
+    --cor-texto: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+}
+
+#estrelasCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: var(--fundo-cor);
+}
+
+.conteudo {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
